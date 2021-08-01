@@ -1,0 +1,31 @@
+arquivos necessário para rodar o arquivo do Rmarkdown:
+
+roteiro_marcosmelo.rmd (Rmarkdown)
+saebSTfull.rds (base de dados)
+reference.bib (Bibliografia em BibTeX)
+figesquema.png
+fig1-2.png
+reg.jpg
+reta.png
+quadro1.png
+tabela1.png
+
+Sugiro que instale primeiro o pacote wordcountaddin e reinicie o R. Use os comandos abaixo:
+
+install.packages(devtools)
+devtools::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)
+
+O código funcionou no meu computador sem nenhum erro, mas estou enviando também o html já compilado.
+
+Instale os pacotes abaixo e salve a base de dados e as figuras no mesmo diretório do arquivo do Rmarkdown
+
+library(tidyverse)
+library(lme4)   
+library(plotly) 
+library(scales) 
+library(ggpubr) 
+library(jtools) 
+library(sjPlot)
+library(RColorBrewer) 
+library(reshape) 
+library(splines)
